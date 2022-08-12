@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "basic"
+version = "0.1.0"
+description = ""
+authors = ["Daryl Diningrat <diningratdaryl@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.23.1"
+loguru = "^0.6.0"
+
+[tool.poetry.dev-dependencies]
+
+
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = []
+
+[tool.pdm.build]
+includes = []
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
+
+[project]
+name = "basic"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Daryl Diningrat", email = "diningratdaryl@gmail.com"},
+    {name = "Daryl Diningrat",email = "diningratdaryl@gmail.com"},
+]
+dependencies = ["numpy<2.0.0,>=1.23.1", "loguru<1.0.0,>=0.6.0"]
+requires-python = ">=3.9,<4.0"
+license = {text = "MIT"}
+
+[project.urls]
