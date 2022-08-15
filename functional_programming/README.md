@@ -231,3 +231,36 @@ As we can see in the above example both the cube() function and lambda_cube() fu
 
 - Without using Lambda: Here, both of them return the cube of a given number. But, while using def, we needed to define a function with a name cube and needed to pass a value to it. After execution, we also needed to return the result from where the function was called using the return keyword.
 - Using Lambda: Lambda definition does not include a “return” statement, it always contains an expression that is returned. We can also put a lambda definition anywhere a function is expected, and we don’t have to assign it to a variable at all. This is the simplicity of lambda functions.
+
+## __List Comprehension__
+
+A Python list comprehension consists of brackets containing the expression, which is executed for each element along with the for loop to iterate over each element in the Python list. 
+
+> Python List comprehension provides a much more short syntax for creating a new list based on the values of an existing list.
+
+__Advantages of List Comprehension__
+
+- More time-efficient and space-efficient than loops.
+- Require fewer lines of code.
+- Transforms iterative statement into a formula.
+
+__Syntax :__
+
+`newList = [ expression(element) for element in oldList if condition ]`
+
+__Example :__
+
+```python
+
+# Using list comprehension to iterate through loop
+List = [character for character in [1, 2, 3]]
+ 
+# Displaying list
+print(List)
+```
+
+__Output :__
+
+```
+[1, 2, 3]
+```
