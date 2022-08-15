@@ -181,3 +181,53 @@ __Output :__
 The sum of the list elements is : 17
 The maximum element of the list is : 6
 ```
+
+## __Lambda__
+
+Python Lambda Functions are anonymous function means that the function is without a name. As we already know that the def keyword is used to define a normal function in Python. Similarly, the lambda keyword is used to define an anonymous function in Python. 
+
+__Python Lambda Function__
+
+__Syntax :__
+
+`lambda arguments: expression`
+
+- This function can have any number of arguments but only one expression, which is evaluated and returned.
+- One is free to use lambda functions wherever function objects are required.
+- You need to keep in your knowledge that lambda functions are syntactically restricted to a single expression.
+- It has various uses in particular fields of programming besides other types of expressions in functions.
+
+__Example :__ Lambda Function Example
+
+Difference Between Lambda functions and def defined function are as follows: 
+
+Let’s look at this example and try to understand the difference between a normal def defined function and lambda function. This is a program that returns the cube of a given value:  
+
+```python
+
+# Python code to illustrate cube of a number
+# showing difference between def() and lambda().
+def cube(y):
+    return y*y*y
+ 
+lambda_cube = lambda y: y*y*y
+ 
+# using the normally
+# defined function
+print(cube(5))
+ 
+# using the lambda function
+print(lambda_cube(5))
+```
+
+__Output :__
+
+```
+125
+125
+```
+
+As we can see in the above example both the cube() function and lambda_cube() function behave the same and as intended. Let’s analyze the above example a bit more:
+
+- Without using Lambda: Here, both of them return the cube of a given number. But, while using def, we needed to define a function with a name cube and needed to pass a value to it. After execution, we also needed to return the result from where the function was called using the return keyword.
+- Using Lambda: Lambda definition does not include a “return” statement, it always contains an expression that is returned. We can also put a lambda definition anywhere a function is expected, and we don’t have to assign it to a variable at all. This is the simplicity of lambda functions.
