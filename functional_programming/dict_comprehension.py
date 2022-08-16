@@ -6,9 +6,17 @@ A dictionary comprehension takes the form
 """
 simple_dict = {
     'a':1,
-    'b':2
+    'b':2,
+    'c':3
 }
 
-my_dict = {key:value**2 for key, value in simple_dict.items()}
+my_dict = {k:v**4 for k, v in simple_dict.items()}
+
+my_dict2 = {k:v**4 for k, v in simple_dict.items()
+            if v%2 ==0}
+
+my_dict3 = {num:num**4 for num in [1,2,3]}
 
 print(my_dict)
+print(my_dict2)
+print(my_dict3)
