@@ -264,3 +264,79 @@ __Output :__
 ```
 [1, 2, 3]
 ```
+
+## __Set Comprehension__
+
+Set comprehensions are pretty similar to list comprehensions. The only difference between them is that set comprehensions use curly brackets { }. Let’s look at the following example to understand set comprehensi
+
+__Example :__
+
+Suppose we want to create an output set which contains only the even numbers that are present in the input list. Note that set will discard all the duplicate values. Let’s see how we can do this using for loops and set comprehension.
+
+```python
+input_list = [1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 7]
+  
+output_set = set()
+  
+# Using loop for constructing output set
+for var in input_list:
+    if var % 2 == 0:
+        output_set.add(var)
+  
+print("Output Set using for loop:", output_set)
+```
+
+__Output :__
+
+```
+Output Set using for loop: {2, 4, 6}
+```
+
+```python
+
+# Using Set comprehensions 
+# for constructing output set
+  
+input_list = [1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 7]
+  
+set_using_comp = {var for var in input_list if var % 2 == 0}
+  
+print("Output Set using set comprehensions:",
+                              set_using_comp)
+```
+
+__Output :__
+```
+Output Set using set comprehensions: {2, 4, 6}
+```
+
+## __Dictionary Comprehension__
+
+Like List Comprehension, Python allows dictionary comprehensions. We can create dictionaries using simple expressions.
+A dictionary comprehension takes the form `{key: value for (key, value) in iterable}`
+
+__Example :__
+
+```python
+# Python code to demonstrate dictionary 
+# comprehension
+  
+# Lists to represent keys and values
+keys = ['a','b','c','d','e']
+values = [1,2,3,4,5]  
+  
+# but this line shows dict comprehension here  
+myDict = { k:v for (k,v) in zip(keys, values)}  
+  
+# We can use below too
+# myDict = dict(zip(keys, values))  
+  
+print (myDict)
+```
+
+__Output :__
+
+```
+{'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5}
+```
+
